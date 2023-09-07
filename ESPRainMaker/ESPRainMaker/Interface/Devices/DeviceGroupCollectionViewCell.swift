@@ -178,7 +178,7 @@ extension DeviceGroupCollectionViewCell: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "deviceCollectionViewCell", for: indexPath) as! DevicesCollectionViewCell
         cell.refresh()
         let device = getDeviceAt(indexPath: indexPath)
-        cell.deviceName.text = device.getDeviceName()
+        cell.deviceName.text = "\(device.getDeviceName() ?? "")\n\nDevice Id: \(device.node!.node_id ?? "")"
         cell.device = device
         cell.switchButton.isHidden = true
         cell.primaryValue.isHidden = true
@@ -210,7 +210,7 @@ extension DeviceGroupCollectionViewCell: UICollectionViewDataSource {
             }) {
                 primaryKeyFound = true
                 if primaryParam.uiType?.lowercased() == Constants.trigger {
-                    cell.triggerButton.isHidden = false
+                    cell.triggerButton.isHidden = true
                     if device.isReachable(), primaryParam.properties?.contains("write") ?? false {
                         cell.triggerButton.isEnabled = true
                         cell.triggerButton.alpha = 1.0
@@ -223,7 +223,7 @@ extension DeviceGroupCollectionViewCell: UICollectionViewDataSource {
                         cell.switchButton.alpha = 1.0
                         cell.switchButton.backgroundColor = UIColor.white
                         cell.switchButton.isEnabled = true
-                        cell.switchButton.isHidden = false
+                        cell.switchButton.isHidden = true
                         cell.switchButton.setBackgroundImage(UIImage(named: "switch_off"), for: .normal)
                         if let value = primaryParam.value as? Bool {
                             if value {
@@ -232,7 +232,7 @@ extension DeviceGroupCollectionViewCell: UICollectionViewDataSource {
                             }
                         }
                     } else {
-                        cell.switchButton.isHidden = false
+                        cell.switchButton.isHidden = true
                         cell.switchButton.isEnabled = false
                         cell.switchButton.backgroundColor = UIColor(hexString: "#E5E5E5")
                         cell.switchButton.alpha = 0.4
@@ -241,12 +241,12 @@ extension DeviceGroupCollectionViewCell: UICollectionViewDataSource {
                 } else if primaryParam.dataType?.lowercased() == "string" {
                     cell.switchButton.isHidden = true
                     cell.primaryValue.text = primaryParam.value as? String ?? ""
-                    cell.primaryValue.isHidden = false
+                    cell.primaryValue.isHidden = true
                 } else {
                     cell.switchButton.isHidden = true
                     if let value = primaryParam.value {
                         cell.primaryValue.text = "\(value)"
-                        cell.primaryValue.isHidden = false
+                        cell.primaryValue.isHidden = true
                     }
                 }
             }
@@ -257,7 +257,7 @@ extension DeviceGroupCollectionViewCell: UICollectionViewDataSource {
                             if let value = item.value as? String {
                                 primaryKeyFound = true
                                 cell.primaryValue.text = value
-                                cell.primaryValue.isHidden = false
+                                cell.primaryValue.isHidden = true
                             }
                         }
                     }
@@ -320,7 +320,7 @@ extension DeviceGroupCollectionViewCell: UICollectionViewDataSource {
         let (result, _) = ESPMatterClusterUtil.shared.isOnOffServerSupported(groupId: groupId, deviceId: deviceId)
         if result {
             cell.deviceImage.image = UIImage(named: ESPMatterConstants.lightDevice)
-            cell.onOffButton.isHidden = false
+            cell.onOffButton.isHidden = true
         } else if ESPMatterClusterUtil.shared.isOnOffClientSupported(groupId: groupId, deviceId: deviceId) {
             if isSingleDeviceNode {
                 cell.endpointClusterId = endPointClusterId
@@ -348,12 +348,12 @@ extension DeviceGroupCollectionViewCell: UICollectionViewDataSource {
 extension DeviceGroupCollectionViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_: UICollectionView, layout _: UICollectionViewLayout, sizeForItemAt _: IndexPath) -> CGSize {
         let width = UIScreen.main.bounds.width
-        var cellWidth: CGFloat = 0
-        if width > 450 {
-            cellWidth = (width - 60) / 3.0
-        } else {
-            cellWidth = (width - 30) / 2.0
-        }
+        var cellWidth: CGFloat = 355
+        //if width > 450 {
+        //    cellWidth = (width - 60) / 3.0
+        //} else {
+        //    cellWidth = (width - 30) / 2.0
+        //}
         return CGSize(width: cellWidth, height: 110.0)
     }
 }

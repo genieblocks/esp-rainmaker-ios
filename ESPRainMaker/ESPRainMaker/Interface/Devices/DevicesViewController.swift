@@ -327,8 +327,10 @@ class DevicesViewController: UIViewController {
 
         // Check if scan is enabled in ap
         if Configuration.shared.espProvSetting.scanEnabled {
-            let scannerVC = mainStoryboard.instantiateViewController(withIdentifier: "scannerVC") as! ScannerViewController
-            navigationController?.pushViewController(scannerVC, animated: true)
+            //let scannerVC = mainStoryboard.instantiateViewController(withIdentifier: "scannerVC") as! ScannerViewController
+            //navigationController?.pushViewController(scannerVC, animated: true)
+            let bleLandingVC = storyboard?.instantiateViewController(withIdentifier: "bleLandingVC") as! BLELandingViewController
+            navigationController?.pushViewController(bleLandingVC, animated: true)
         } else {
             // If scan is not enabled check supported transport
             switch Configuration.shared.espProvSetting.transport {

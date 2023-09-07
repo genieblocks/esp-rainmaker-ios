@@ -4,7 +4,7 @@
 <dict>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.espressif.rainmaker.softap</string>
+		<string>group.com.espressif.rainmaker.softap.gb</string>
 	</array>
 </dict>
 </plist>

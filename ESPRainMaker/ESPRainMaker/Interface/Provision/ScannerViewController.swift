@@ -44,8 +44,9 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         default:
             break
         }
-        scanQrCode()
-
+        //scanQrCode()
+        goToBleProvision()
+        
         Utility.setActiveSSID()
     }
 

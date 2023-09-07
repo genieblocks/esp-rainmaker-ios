@@ -24,10 +24,16 @@ extension DevicesViewController: DeviceGroupCollectionViewCellDelegate {
     /// Did select device
     /// - Parameter device: device
     func didSelectDevice(device: Device) {
-        let deviceTraitsVC = controlStoryBoard.instantiateViewController(withIdentifier: Constants.deviceTraitListVCIdentifier) as! DeviceTraitListViewController
-        deviceTraitsVC.device = device
+        //let deviceTraitsVC = controlStoryBoard.instantiateViewController(withIdentifier: Constants.deviceTraitListVCIdentifier) as! DeviceTraitListViewController
+        //deviceTraitsVC.device = device
+        //Utility.hideLoader(view: view)
+        //navigationController?.pushViewController(deviceTraitsVC, animated: true)
+        
+        let deviceStoryboard = UIStoryboard(name: "DeviceDetail", bundle: nil)
+        let destination = deviceStoryboard.instantiateViewController(withIdentifier: "nodeDetailsVC") as! NodeDetailsViewController
+        destination.currentNode = device.node
         Utility.hideLoader(view: view)
-        navigationController?.pushViewController(deviceTraitsVC, animated: true)
+        navigationController?.pushViewController(destination, animated: true)
     }
     
     /// Did select node
