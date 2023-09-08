@@ -716,7 +716,7 @@
 		0CF69234270A308B0098F515 /* ESPAlexaAPIWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPAlexaAPIWorker.swift; sourceTree = "<group>"; };
 		0CF69241270A34140098F515 /* AppDelegate+ESPAlexa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ESPAlexa.swift"; sourceTree = "<group>"; };
 		0E78E823824B7739458B5136 /* Pods_ESPRainMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ESPRainMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1431462320DE994B0017E119 /* ESP RainMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ESP RainMaker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1431462320DE994B0017E119 /* Device Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1431462620DE994B0017E119 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1431462B20DE994B0017E119 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1431462D20DE994C0017E119 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -1563,7 +1563,7 @@
 		1431462420DE994B0017E119 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1431462320DE994B0017E119 /* ESP RainMaker.app */,
+				1431462320DE994B0017E119 /* Device Manager.app */,
 				F1C611A324F79804007EEFC6 /* ESP ScheduleTests.xctest */,
 				F1AE33C3263611B300694B52 /* ESPRainMakerPushNotificationExtension.appex */,
 				0CCD2FAF2A121C7B00ABB680 /* MatterExtension.appex */,
@@ -2447,7 +2447,7 @@
 			);
 			name = ESPRainMaker;
 			productName = EspressifProvision;
-			productReference = 1431462320DE994B0017E119 /* ESP RainMaker.app */;
+			productReference = 1431462320DE994B0017E119 /* Device Manager.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F1AE33C2263611B300694B52 /* ESPRainMakerPushNotificationExtension */ = {
@@ -3365,7 +3365,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D ESPRainMakerMatter";
 				PRODUCT_BUNDLE_IDENTIFIER = com.espressif.rainmaker.softap.gb;
-				PRODUCT_NAME = "ESP RainMaker";
+				PRODUCT_NAME = "Device Manager";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = off;
@@ -3702,7 +3702,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DPROD";
 				PRODUCT_BUNDLE_IDENTIFIER = com.espressif.rainmaker.softap.gb;
-				PRODUCT_NAME = "ESP RainMaker";
+				PRODUCT_NAME = "Device Manager";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_ENFORCE_EXCLUSIVE_ACCESS = off;

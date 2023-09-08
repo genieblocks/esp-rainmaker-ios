@@ -12,7 +12,7 @@
         <!--Settings-->
         <scene sceneID="I6c-bf-0X9">
             <objects>
-                <navigationController id="OxW-ag-4I0" customClass="UserNavigationController" customModule="ESP_RainMaker" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="OxW-ag-4I0" customClass="UserNavigationController" customModule="Device_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" tag="3" title="Settings" image="settings" selectedImage="settings_selected" id="xlK-T4-Yfv">
                         <inset key="imageInsets" minX="0.0" minY="24" maxX="0.0" maxY="24"/>
                     </tabBarItem>
@@ -32,7 +32,7 @@
         <!--Settings Page View Controller-->
         <scene sceneID="nJn-pE-O8m">
             <objects>
-                <viewController id="KmU-8M-UuW" customClass="SettingsPageViewController" customModule="ESP_RainMaker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KmU-8M-UuW" customClass="SettingsPageViewController" customModule="Device_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Ig-et-rtx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -67,7 +67,7 @@
                                         <color key="textColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dA-Lf-QAl" customClass="SelectableLabel" customModule="ESP_RainMaker" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dA-Lf-QAl" customClass="SelectableLabel" customModule="Device_Manager" customModuleProvider="target">
                                         <rect key="frame" x="98" y="28.666666666666657" width="296" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
@@ -112,7 +112,7 @@
                             <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VMh-c2-tMc">
                                 <rect key="frame" x="0.0" y="176" width="414" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozj-7C-O5d" customClass="SecondaryButton" customModule="ESP_RainMaker" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozj-7C-O5d" customClass="SecondaryButton" customModule="Device_Manager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
                                         <state key="normal" image="right_arrow">
@@ -172,7 +172,7 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ2-YT-W3M">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQ2-YT-W3M">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
                                         <state key="normal" image="right_arrow"/>
@@ -203,7 +203,7 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYJ-Ow-JKb">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYJ-Ow-JKb">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
                                         <state key="normal" image="right_arrow"/>
@@ -226,7 +226,7 @@
                             <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZlH-SR-fGb">
                                 <rect key="frame" x="0.0" y="332" width="414" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcS-uA-Srj" customClass="SecondaryButton" customModule="ESP_RainMaker" customModuleProvider="target">
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcS-uA-Srj" customClass="SecondaryButton" customModule="Device_Manager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
                                         <state key="normal" image="right_arrow">
@@ -258,7 +258,7 @@
                             <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GEt-eG-AgC">
                                 <rect key="frame" x="0.0" y="384" width="414" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGN-5v-3dG" customClass="SecondaryButton" customModule="ESP_RainMaker" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGN-5v-3dG" customClass="SecondaryButton" customModule="Device_Manager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
                                         <state key="normal" image="right_arrow">
@@ -388,12 +388,12 @@
         <!--About View Controller-->
         <scene sceneID="h5n-LF-oJs">
             <objects>
-                <viewController id="gsK-In-2IX" customClass="AboutViewController" customModule="ESP_RainMaker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gsK-In-2IX" customClass="AboutViewController" customModule="Device_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qem-PB-6Zf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0du-oQ-Bqs" customClass="TopBarView" customModule="ESP_RainMaker" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0du-oQ-Bqs" customClass="TopBarView" customModule="Device_Manager" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="78.666666666666671"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPn-5T-BZk">
@@ -402,7 +402,7 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzX-kW-rxF" customClass="BarButton" customModule="ESP_RainMaker" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzX-kW-rxF" customClass="BarButton" customModule="Device_Manager" customModuleProvider="target">
                                         <rect key="frame" x="16" y="30" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="cmq-59-QYu"/>
@@ -426,7 +426,7 @@
                                     <constraint firstItem="hPn-5T-BZk" firstAttribute="centerX" secondItem="0du-oQ-Bqs" secondAttribute="centerX" id="rtI-gx-CEX"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ggy-Nf-ueu">
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ggy-Nf-ueu">
                                 <rect key="frame" x="0.0" y="589" width="414" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsB-WI-QGH">
@@ -509,8 +509,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by ESPRESSIF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVS-kd-gMI">
-                                <rect key="frame" x="125" y="649" width="164" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Powered by GenieBlocks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVS-kd-gMI">
+                                <rect key="frame" x="120.66666666666669" y="649" width="173" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -548,25 +548,25 @@
         <!--App Settings View Controller-->
         <scene sceneID="zUV-d6-tu3">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="4ky-wZ-xLi" customClass="AppSettingsViewController" customModule="ESP_RainMaker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="4ky-wZ-xLi" customClass="AppSettingsViewController" customModule="Device_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ujv-MB-qWU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1mo-Jr-dCw" customClass="BGImageView" customModule="ESP_RainMaker" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1mo-Jr-dCw" customClass="BGImageView" customModule="Device_Manager" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iph-nI-wxh" customClass="TopBarView" customModule="ESP_RainMaker" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iph-nI-wxh" customClass="TopBarView" customModule="Device_Manager" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="78.666666666666671"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84I-6T-8aA" customClass="BarTitle" customModule="ESP_RainMaker" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84I-6T-8aA" customClass="BarTitle" customModule="Device_Manager" customModuleProvider="target">
                                         <rect key="frame" x="175.33333333333334" y="45.333333333333336" width="63.333333333333343" height="19.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                         <color key="textColor" red="0.32549019610000002" green="0.18823529410000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abT-lx-AeH" customClass="BarButton" customModule="ESP_RainMaker" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abT-lx-AeH" customClass="BarButton" customModule="Device_Manager" customModuleProvider="target">
                                         <rect key="frame" x="16" y="30" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="3C8-CC-7Qu"/>
@@ -593,7 +593,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ij-Bs-7YI">
                                 <rect key="frame" x="32" y="158.66666666666666" width="350" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7E-Ao-rIg" customClass="SecondaryButton" customModule="ESP_RainMaker" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7E-Ao-rIg" customClass="SecondaryButton" customModule="Device_Manager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -640,7 +640,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xa6-BS-cdu">
                                 <rect key="frame" x="32" y="250.66666666666663" width="350" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82O-DI-lEL" customClass="SecondaryButton" customModule="ESP_RainMaker" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82O-DI-lEL" customClass="SecondaryButton" customModule="Device_Manager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -675,7 +675,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="891-6d-vEc">
                                 <rect key="frame" x="32" y="342.66666666666669" width="350" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1P-ix-KDp" customClass="SecondaryButton" customModule="ESP_RainMaker" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1P-ix-KDp" customClass="SecondaryButton" customModule="Device_Manager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -731,7 +731,7 @@
                                     <action selector="cancelClicked:" destination="4ky-wZ-xLi" eventType="touchUpInside" id="esU-U7-3SL"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SDW-Bt-POt" customClass="ColorPickerView" customModule="ESP_RainMaker" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SDW-Bt-POt" customClass="ColorPickerView" customModule="Device_Manager" customModuleProvider="target">
                                 <rect key="frame" x="10" y="716" width="394" height="0.0"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -804,7 +804,7 @@
         <!--Notifications View Controller-->
         <scene sceneID="OPo-Gx-THP">
             <objects>
-                <viewController storyboardIdentifier="notificationsVC" modalPresentationStyle="fullScreen" id="7Pt-xn-75U" customClass="NotificationsViewController" customModule="ESP_RainMaker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="notificationsVC" modalPresentationStyle="fullScreen" id="7Pt-xn-75U" customClass="NotificationsViewController" customModule="Device_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o4Y-7W-sVz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -834,7 +834,7 @@
                                     <constraint firstItem="KQu-Ox-ckS" firstAttribute="centerX" secondItem="IlB-eu-Cyl" secondAttribute="centerX" id="nGh-WR-Tyd"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnH-r7-d5w" customClass="TopBarView" customModule="ESP_RainMaker" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnH-r7-d5w" customClass="TopBarView" customModule="Device_Manager" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="78.666666666666671"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuM-QB-L82">
@@ -880,7 +880,7 @@
                                 <rect key="frame" x="20" y="98.666666666666686" width="374" height="629.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="addSharingNotificationsTVC" rowHeight="200" id="0IQ-5t-ssQ" customClass="AddSharingNotificationTableViewCell" customModule="ESP_RainMaker" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="addSharingNotificationsTVC" rowHeight="200" id="0IQ-5t-ssQ" customClass="AddSharingNotificationTableViewCell" customModule="Device_Manager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="374" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0IQ-5t-ssQ" id="zQp-YB-6zL">
@@ -964,7 +964,7 @@
                                             <outlet property="detailLabel" destination="J1E-PU-B61" id="FBh-OL-m9l"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="notificationsTVC" rowHeight="80" id="4n6-pF-wut" customClass="NotificationsTableViewCell" customModule="ESP_RainMaker" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="notificationsTVC" rowHeight="80" id="4n6-pF-wut" customClass="NotificationsTableViewCell" customModule="Device_Manager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="250" width="374" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4n6-pF-wut" id="Wzc-cp-yeZ">
@@ -1058,12 +1058,12 @@
         <!--Voice Services View Controller-->
         <scene sceneID="O8b-ga-7EU">
             <objects>
-                <viewController storyboardIdentifier="VoiceServicesViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TzR-o0-VMM" customClass="VoiceServicesViewController" customModule="ESP_RainMaker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VoiceServicesViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TzR-o0-VMM" customClass="VoiceServicesViewController" customModule="Device_Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ivp-wG-t0C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqx-Dq-sky" customClass="TopBarView" customModule="ESP_RainMaker" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bqx-Dq-sky" customClass="TopBarView" customModule="Device_Manager" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="78.666666666666671"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voice Services" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muO-NQ-QeH">
@@ -1072,7 +1072,7 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rND-Ko-1jf" customClass="BarButton" customModule="ESP_RainMaker" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rND-Ko-1jf" customClass="BarButton" customModule="Device_Manager" customModuleProvider="target">
                                         <rect key="frame" x="16" y="30" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="FDO-N0-8yR"/>

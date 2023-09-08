@@ -43,6 +43,7 @@ class SettingsPageViewController: UIViewController {
         }
         #else
         self.hideGroupSharing()
+        self.hideNotification()
         #endif
         
         if !Configuration.shared.appConfiguration.supportSharing {
@@ -81,7 +82,7 @@ class SettingsPageViewController: UIViewController {
             }
             if pendingRequestCount > 0 {
                 notificationCount.text = "\(pendingRequestCount)"
-                notificationView.isHidden = false
+                notificationView.isHidden = true
             } else {
                 notificationCount.text = ""
                 notificationView.isHidden = true
@@ -148,6 +149,11 @@ class SettingsPageViewController: UIViewController {
         self.groupSharingHeightConstraint.constant = 0
         self.groupSharingView.isHidden = true
     }
+    
+    private func hideNotification() {
+        self.notificationView.frame.size.height = 0
+        self.groupSharingView.isHidden = true
+    }
 
     private func getSharingRequests() {
         NodeSharingManager.shared.getSharingRequests(primaryUser: false) { requests, error in
@@ -163,7 +169,7 @@ class SettingsPageViewController: UIViewController {
                     }
                     if count > 0 {
                         self.notificationCount.text = "\(count)"
-                        self.notificationView.isHidden = false
+                        self.notificationView.isHidden = true
                     } else {
                         self.notificationCount.text = ""
                         self.notificationView.isHidden = true
