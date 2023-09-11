@@ -2379,7 +2379,7 @@ Unable to add device</string>
         <image name="internet" width="70" height="70"/>
         <image name="menu_icon" width="32" height="32"/>
         <image name="no_camera" width="620" height="620"/>
-        <image name="no_device_icon" width="620" height="620"/>
+        <image name="no_device_icon" width="620" height="620.5"/>
         <image name="password" width="70" height="70"/>
         <image name="refresh_icon" width="128" height="128"/>
         <image name="schedule" width="70" height="70"/>
